@@ -1,17 +1,9 @@
-import {useCallback, useState} from "react";
-
 import {ItemPages} from "./Item/ItemPages.jsx";
-
+import {usePagesContainer} from "./Hook/usePagesContainer.js";
 
 export const PagesContainer = ({routesArr, isOpened}) => {
 
-    const [isSelected, setSelected] = useState(false);
-
-    const goToRoute = useCallback((path) => {
-        console.log(`going to "${path.title}"`);
-        setSelected((prevState) =>
-            prevState === path ? null : path);
-    }, [])
+    const { isSelected, goToRoute} = usePagesContainer()
 
     return (
         <div>

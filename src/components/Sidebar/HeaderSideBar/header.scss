@@ -1,0 +1,27 @@
+.containerHeader {
+  display: flex;
+  align-items: center;
+
+  .img {
+    width: 23px;
+    height: 23px;
+  }
+
+  .titleHeader {
+    font-weight: bold;
+    margin-left: 10px;
+  }
+
+  .button-container {
+    position: absolute;
+    right: -35px;
+    transition: right 0.4s ease-in-out;
+
+    .buttonHeader {
+      border-radius: 50%;
+      text-align: center;
+      background-color: #888484;
+      cursor: pointer;
+    }
+  }
+}

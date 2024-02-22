@@ -1,0 +1,29 @@
+.sidebar {
+  min-height: 90svh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+  border-radius: 12px;
+  width: 90px;
+  gap: 20px;
+  transition: width 0.8s ease-in-out;
+  position: relative;
+
+  &.opened {
+    width: 200px;
+
+    .button-container {
+      right: -15px;
+    }
+  }
+
+  .routes-container {
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+    margin-bottom: 20px;
+  }
+}

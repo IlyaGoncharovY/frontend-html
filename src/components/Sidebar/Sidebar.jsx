@@ -1,8 +1,8 @@
 import './sidebar.scss';
 import {useCallback, useState} from 'react';
-import classnames from 'classnames';
 import {PagesContainer} from "./Pages/PagesContainer.jsx";
 import {Header} from "./HeaderSideBar/Header.jsx";
+import {generateContainerClassnames} from "../../assets";
 
 const routes = [
     {title: 'Home', icon: 'fas-solid fa-house', path: '/'},
@@ -26,7 +26,7 @@ export const Sidebar = () => {
         setIsOpen(prevState => !prevState);
     }, []);
 
-    const containerClassnames = classnames('sidebar', {opened: isOpened});
+    const containerClassnames = generateContainerClassnames('sidebar', isOpened);
 
     return (
         <div className={containerClassnames}>

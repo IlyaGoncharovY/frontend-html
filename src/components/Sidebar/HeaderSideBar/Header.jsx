@@ -2,11 +2,11 @@ import React, {memo} from 'react';
 import logo from "../../../assets/logo.png";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import './header.scss'
-import classnames from "classnames";
+import {generateContainerClassnames} from "../../../assets";
 
 export const Header = memo(({toggleSidebar, isOpened}) => {
 
-    const containerClassnames = classnames('button-container', {opened: isOpened});
+    const containerClassnames = generateContainerClassnames('button-container', isOpened);
 
     return (
         <div className={'containerHeader'}>

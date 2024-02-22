@@ -1,7 +1,8 @@
-import React, {useState, memo} from "react";
+import React, {memo} from "react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 import {UniversalSpan} from "../../../../common";
+import {useItemPages} from "./Hook/useItemPages.js";
 
 import './itemPages.scss'
 
@@ -10,11 +11,7 @@ export const ItemPages = memo((
         route, isOpened, isSelected, goToRoute
     }) => {
 
-    const [isHovered, setHovered] = useState(false);
-
-    const onMouseEnterHandler = () => setHovered(true);
-
-    const onMouseLeaveHandler = () => setHovered(false);
+    const {isHovered, onMouseEnterHandler, onMouseLeaveHandler} = useItemPages();
 
     return (
         <div

@@ -1,6 +1,6 @@
-import React, {useState} from "react";
+import React, {useState, memo} from "react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {memo} from "react";
+
 import './itemPages.scss'
 
 export const ItemPages = memo((

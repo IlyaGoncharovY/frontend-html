@@ -1,5 +1,7 @@
-import {ItemPages} from "./Item/ItemPages.jsx";
 import {useCallback, useState} from "react";
+
+import {ItemPages} from "./Item/ItemPages.jsx";
+
 
 export const PagesContainer = ({routesArr, isOpened}) => {
 

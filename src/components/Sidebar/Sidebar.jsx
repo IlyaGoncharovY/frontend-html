@@ -1,8 +1,9 @@
 import './sidebar.scss';
 import {useCallback, useState} from 'react';
-import {PagesContainer} from "./Pages/PagesContainer.jsx";
+
 import {Header} from "./HeaderSideBar/Header.jsx";
 import {generateContainerClassnames} from "../../assets";
+import {PagesContainer} from "./Pages/PagesContainer.jsx";
 
 const routes = [
     {title: 'Home', icon: 'fas-solid fa-house', path: '/'},

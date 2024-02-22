@@ -9,7 +9,7 @@
       border-radius: 13px;
       background-color: #8a8989;
       width: 110%;
-      margin-left: -20%;
+      margin-left: -10%;
       transition: margin-left 0.4s ease-in-out;
 
       .tooltip {
@@ -37,8 +37,5 @@
 .selectedItem {
   border-radius: 13px;
   background-color: #c59a6e;
-  width: 110%;
-  margin-left: -25%;
-  transition: margin-left 0.4s ease-in-out;
 }
 

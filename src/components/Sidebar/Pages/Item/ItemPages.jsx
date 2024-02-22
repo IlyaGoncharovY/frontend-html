@@ -14,7 +14,6 @@ export const ItemPages = memo((
 
     const onMouseLeaveHandler = () => setHovered(false);
 
-
     return (
         <div
             key={route.title}

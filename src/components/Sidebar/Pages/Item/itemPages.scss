@@ -1,3 +1,5 @@
+@import "../../../../common/sass/variabler";
+@import "../../../../common/sass/mixins";
 .containerItem {
 
   .descriptionItem {
@@ -7,10 +9,10 @@
 
     &:hover {
       border-radius: 13px;
-      background-color: #8a8989;
+      background-color: $bgColor;
       width: 110%;
       margin-left: -10%;
-      transition: margin-left 0.4s ease-in-out;
+      @include transitionDefault(margin-left, 0.4s);
 
       .tooltip {
         display: block;
@@ -26,7 +28,7 @@
       top: 0;
       left: 200%;
       transform: translateX(-50%);
-      background-color: #8a8989;
+      background-color: $bgColor;
       border-radius: 5px;
       padding: 5px;
       display: none;

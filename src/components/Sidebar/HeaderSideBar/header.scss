@@ -1,3 +1,6 @@
+@import "../../../common/sass/mixins";
+@import "../../../common/sass/variabler";
+
 .containerHeader {
   display: flex;
   align-items: center;
@@ -15,12 +18,12 @@
   .button-container {
     position: absolute;
     right: -35px;
-    transition: right 0.4s ease-in-out;
+    @include transitionDefault(right, 0.4s);
 
     .buttonHeader {
       border-radius: 50%;
       text-align: center;
-      background-color: #888484;
+      background-color: $bgColor;
       cursor: pointer;
     }
   }

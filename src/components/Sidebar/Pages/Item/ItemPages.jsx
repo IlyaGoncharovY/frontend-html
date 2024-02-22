@@ -1,6 +1,8 @@
 import React, {useState, memo} from "react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
+import {UniversalSpan} from "../../../../common";
+
 import './itemPages.scss'
 
 export const ItemPages = memo((
@@ -24,11 +26,9 @@ export const ItemPages = memo((
         >
             <div className="descriptionItem">
                 <FontAwesomeIcon icon={route.icon}/>
-                {isOpened && <span className={'titleItem'}>{route.title}</span>}
+                {isOpened && <UniversalSpan style={'titleItem'} title={route.title}/>}
                 {(!isOpened && isHovered) && (
-                    <span className={'tooltip'}>
-                        {route.title}
-                    </span>
+                    <UniversalSpan style={'tooltip'} title={route.title}/>
                 )}
             </div>
         </div>

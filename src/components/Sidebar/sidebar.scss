@@ -11,7 +11,7 @@
   border-radius: 12px;
   width: 90px;
   gap: 20px;
-  @include transitionDefault(width, 0.8s);
+  @include transitionDefault(width, 0.3s);
   position: relative;
 
   &.opened {
@@ -26,6 +26,6 @@
     display: flex;
     flex-direction: column;
     gap: 150px;
-    margin-bottom: 20px;
+    //margin-bottom: 20px;
   }
 }

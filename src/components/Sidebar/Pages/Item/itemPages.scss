@@ -1,10 +1,11 @@
 @import "../../../../common/sass/variabler";
 @import "../../../../common/sass/mixins";
-.containerItem {
 
+.containerItem {
   .descriptionItem {
     cursor: pointer;
     position: relative;
+    padding: 5px;
 
     &:hover {
       border-radius: 13px;
@@ -31,10 +32,10 @@
       border-radius: 5px;
       padding: 5px;
       display: none;
-
     }
   }
 }
+
 .selectedItem {
   border-radius: 13px;
   background-color: #c59a6e;

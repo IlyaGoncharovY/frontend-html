@@ -1,12 +1,14 @@
 import {ItemPages} from "./Item/ItemPages.jsx";
 import {usePagesContainer} from "./Hook/usePagesContainer.js";
 
+import './pagesContainer.scss';
+
 export const PagesContainer = ({routesArr, isOpened}) => {
 
     const { isSelected, goToRoute} = usePagesContainer()
 
     return (
-        <div>
+        <div className={'pagesContainer'}>
             {
                 routesArr.map((route) => (
                         <ItemPages

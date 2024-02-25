@@ -1,10 +1,10 @@
-import './sidebar.scss';
-
 import {useSideBar} from "./Hook/useSideBar.js";
 import {Header} from "./HeaderSideBar/Header.jsx";
 import {bottomRoutes, routes} from "../../common";
 import {generateContainerClassnames} from "../../assets";
 import {PagesContainer} from "./Pages/PagesContainer.jsx";
+
+import './sidebar.scss';
 
 export const Sidebar = () => {
 
